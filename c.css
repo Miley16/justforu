@@ -1,0 +1,89 @@
+body {
+    margin: 20px 0 0; /* Adjusted margin */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Ensure full viewport height */
+    background-color: #2596be; /* Background color */
+    color: white;
+    font-family: Calligraffitti, cursive; /* Change the font */
+}
+
+.container {
+    text-align: center;
+}
+
+.puppy-gif {
+    width: 300px;
+    height: 300px;
+    background-image: url('https://www.icegif.com/wp-content/uploads/running-icegif-20.gif'); /* Cute cartoon puppy image from the provided link */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px auto; /* Adjusted margin */
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+#yes-btn {
+    background-color: #77dd77; /* Pastel green */
+    border: none;
+    color: white;
+    width: 150px; /* Initial width */
+}
+
+#yes-btn:hover {
+    background-color: #66bb66; /* Darker green on hover */
+}
+
+#blah-btn {
+    background-color: #ffb6c1; /* Pastel red */
+    border: none;
+    color: white;
+    width: 120px; /* Initial width */
+    opacity: 1; /* Initial opacity */
+}
+
+#blah-btn:hover {
+    background-color: #ff99b3; /* Darker pink on hover */
+}
+
+h2 {
+    margin-top: 0; /* Remove default margin */
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInUp 1s forwards; /* Fade-in animation */
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End position */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
